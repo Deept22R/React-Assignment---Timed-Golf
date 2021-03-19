@@ -27,10 +27,11 @@ class Timer extends React.Component {
    startTimer(){
      if(this.state.time===0){
        incTime = setInterval(()=>{this.setState({time : this.state.time+1})},1000);
-       if(this.state.x===250 && this.state.y===250){
-         clearInterval(incTime);
-       }
      }
+     if(this.state.x===250 && this.state.y===250){
+      console.log("hfhdh");
+      clearInterval(incTime);
+    }
    }
   moveBall(){
       if(this.state.time===0){
